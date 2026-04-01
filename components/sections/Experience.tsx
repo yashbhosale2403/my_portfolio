@@ -5,35 +5,35 @@ import { motion, useInView } from 'framer-motion';
 
 const experienceData = [
   {
-    role: "Senior Security Analyst",
-    company: "CyberDefenders Corp",
-    year: "2024 - Present",
+    role: "Cyber Security Intern",
+    company: "Hack Secure",
+    year: "Apr 2025 - May 2025",
     points: [
-      "Led Red Team engagements resulting in 40% reduction of Critical vulnerabilities.",
-      "Engineered automated compliance checking tools using Python and AWS Lambda.",
-      "Supervised a team of 4 junior pentesters during large scale audits."
+      "Conducted reconnaissance, vulnerability scanning, and exploitation across 20+ application endpoints.",
+      "Performed attack-path analysis and identified critical security misconfigurations.",
+      "Delivered structured vulnerability reports including reproduction steps and mitigation strategies.",
+      "Optimized testing workflows using repeatable recon methodologies."
     ],
     color: "neon-purple"
   },
   {
-    role: "SOC Analyst L2",
-    company: "TechGuard Security",
-    year: "2023 - 2024",
+    role: "Virtual Junior Security Analyst",
+    company: "Google Cybersecurity Program",
+    year: "Jan 2024 - Jun 2024",
     points: [
-      "Monitored global telemetry across 500+ endpoints using Splunk SIEM.",
-      "Analyzed zero-day malware patterns directly preventing ransomware propagation.",
-      "Developed custom dashboards highlighting core active threats in real-time."
+      "Investigated 15+ simulated incidents using SOC processes including triage, log analysis, threat detection, and mitigation.",
+      "Analyzed logs and indicators of compromise using SIEM tools.",
+      "Documented incident reports with root cause analysis and remediation steps."
     ],
     color: "neon-cyan"
   },
   {
-    role: "Security Consultant",
-    company: "Freelance",
-    year: "2021 - 2023",
+    role: "Cybersecurity Trainee",
+    company: "Mastercard (Forage Simulation)",
+    year: "Jun 2024",
     points: [
-      "Performed detailed black-box pentesting on over 15+ startups.",
-      "Identified critical SQLi and RCE vulnerabilities leading to widespread patches.",
-      "Trained developer teams on OWASP Top 10 implementation strategies."
+      "Evaluated phishing attack scenarios and identified user-level vulnerabilities.",
+      "Recommended process improvements to reduce human-risk attack vectors."
     ],
     color: "neon-green"
   }
@@ -44,7 +44,7 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="experience" className="py-32 bg-[#0a0a0f] relative border-t border-white/5 overflow-hidden">
+    <section id="experience" className="section-divider py-32 bg-[#0a0a0f] relative border-t border-white/5 overflow-hidden">
       <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-neon-purple/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10" ref={ref}>
@@ -57,8 +57,8 @@ export default function Experience() {
         >
           <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tight mb-4 inline-flex items-center gap-2">
             <span className="text-white">/</span>
-            <span className="text-neon-purple">sys_logs</span>
-            <span className="text-white">_timeline</span>
+            <span className="text-neon-purple">operational</span>
+            <span className="text-white">_experience</span>
           </h2>
           <div className="w-24 h-1 bg-neon-purple/50 rounded-full mx-auto" />
         </motion.div>

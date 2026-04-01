@@ -9,13 +9,13 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { icon: <Target className="text-neon-cyan" />, count: "20+", label: "Endpoints Tested" },
-    { icon: <ShieldAlert className="text-neon-purple" />, count: "15+", label: "Incidents Analyzed" },
-    { icon: <TerminalSquare className="text-neon-green" />, count: "189+", label: "TryHackMe Rooms" }
+    { icon: <Target className="text-neon-cyan" />, count: "Top 5%", label: "TryHackMe Ranking" },
+    { icon: <ShieldAlert className="text-neon-purple" />, count: "189+", label: "Labs Completed" },
+    { icon: <TerminalSquare className="text-neon-green" />, count: "10/25", label: "SCIT CTF 2025" }
   ];
 
   return (
-    <section id="about" className="relative py-32 bg-bg-main overflow-hidden border-t border-white/5">
+    <section id="about" className="section-divider relative py-32 bg-bg-main overflow-hidden border-t border-white/5">
       <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-neon-purple/5 to-transparent pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6" ref={ref}>
@@ -43,14 +43,14 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p>
-              I am a Cybersecurity Engineer and Pentester with a deep focus on <strong className="text-white">Offensive Security</strong> and <strong className="text-white">Vulnerability Research</strong>. I don't just find flaws; I build the defenses required to stop them.
+              I am a cybersecurity-focused Information Technology student at <strong className="text-white">I2IT Pune</strong> with hands-on experience in <strong className="text-white">offensive security</strong>, <strong className="text-white">SOC operations</strong>, and <strong className="text-white">web application security</strong>.
             </p>
             <p>
-              My expertise bridges the gap between software development and deep-level system security. Whether it's hunting zero-days, red teaming enterprise networks, or engineering secure-by-design applications, I thrive in the terminal.
+              My work involves reconnaissance, vulnerability assessment, and exploitation of web applications aligned with OWASP Top 10. I have performed structured red teaming simulations, analyzed security incidents using SOC workflows, and developed security tools to automate vulnerability detection.
             </p>
             <p className="font-mono text-neon-green text-sm p-4 bg-neon-green/5 border border-neon-green/20 rounded-lg inline-block">
-              ~ cat philosophy.txt<br/>
-              <span className="text-text-muted">"Security is not a product, but a process."</span>
+              ~ cat profile.txt<br/>
+              <span className="text-text-muted">I have completed 180+ hands-on labs on TryHackMe, working with SIEM tools, network traffic analysis, and threat detection techniques. I am particularly focused on web exploitation, attack surface analysis, and building secure, scalable systems. Certifications: CCNA - Network fundamentals, routing, ACLs, and automation. CompTIA Security+ - Threats, identity management, cryptography, and network security. TryHackMe SOC Level 1 - SIEM, log analysis, and incident response. Leadership: Technical Team Lead - IEEE Student Branch, Tech Lead - Cybersecurity CV Club, PR Member - GDSC, Technical Team - ACM.</span>
             </p>
           </motion.div>
 

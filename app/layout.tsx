@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Fira_Code } from 'next/font/google';
 import './globals.css';
 import CursorGlow from '@/components/ui/CursorGlow';
+import ParticleBackground from '@/components/ui/ParticleBackground';
 import Navbar from '@/components/layout/Navbar';
 import BootLoader from '@/components/ui/BootLoader';
 import TerminalWidget from '@/components/ui/TerminalWidget';
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${firaCode.variable} antialiased selection:bg-neon-green/30 selection:text-neon-green bg-bg-main text-text-main relative min-h-screen`}>
         <BootLoader />
+        <ParticleBackground />
         <CursorGlow />
         <Navbar />
         {children}

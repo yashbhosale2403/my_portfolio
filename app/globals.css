@@ -29,6 +29,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
   overflow-x: hidden;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at top, rgba(0, 212, 255, 0.08), transparent 35%);
+  background-size: 44px 44px, 44px 44px, 100% 100%;
 }
 
 /* Custom Scrollbar */
@@ -63,4 +68,21 @@ body {
 .glitch-wrapper {
   position: relative;
   display: inline-block;
+}
+
+.section-divider {
+  position: relative;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 1100px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.5), rgba(181, 42, 255, 0.35), transparent);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.18);
+  pointer-events: none;
 }
