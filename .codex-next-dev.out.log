@@ -2,3 +2,15 @@
 > portfolio@0.1.0 dev
 > next dev
 
+▲ Next.js 16.2.2 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+✓ Ready in 941ms
+Creating turbopack project {
+  dir: 'C:\\Users\\Yash\\Desktop\\YashBhosalePortfolio',
+  testMode: true
+}
+
+○ Compiling / ...
+ GET / 200 in 4.0s (next.js: 3.7s, application-code: 275ms)
+ GET /videos/bg.mp4 404 in 476ms (next.js: 424ms, application-code: 52ms)
