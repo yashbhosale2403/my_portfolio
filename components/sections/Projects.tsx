@@ -1,9 +1,9 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Tilt } from 'react-tilt';
 import { Code, ExternalLink, X } from 'lucide-react';
+import TiltCard from '@/components/ui/TiltCard';
 
 const projects = [
   {
@@ -100,7 +100,7 @@ export default function Projects() {
                 transition={{ duration: 0.4 }}
                 key={project.id}
               >
-                <Tilt options={{ max: 15, scale: 1.05, speed: 400, glare: true, "max-glare": 0.2 }}>
+                <TiltCard>
                   <div 
                     onClick={() => setSelectedProject(project)}
                     className="glass rounded-xl overflow-hidden cursor-pointer group border border-white/10 hover:border-neon-cyan/50 transition-colors"
@@ -115,7 +115,7 @@ export default function Projects() {
                       <p className="text-text-muted text-sm line-clamp-2">{project.description}</p>
                     </div>
                   </div>
-                </Tilt>
+                </TiltCard>
               </motion.div>
             ))}
           </AnimatePresence>
