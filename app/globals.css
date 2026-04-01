@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-neon-green: #00ff9f;
+  --color-neon-cyan: #00d4ff;
+  --color-neon-purple: #b52aff;
+  
+  --color-bg-main: #0a0a0f;
+  --color-bg-card: rgba(18, 18, 26, 0.6);
+  
+  --color-text-main: #e2e8f0;
+  --color-text-muted: #8b949e;
+  
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-fira-code);
+}
+
+:root {
+  --background: var(--color-bg-main);
+  --foreground: var(--color-text-main);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-cyan);
+}
+
+/* Custom Selection */
+::selection {
+  background: rgba(0, 255, 159, 0.3);
+  color: var(--color-neon-green);
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glitch-wrapper {
+  position: relative;
+  display: inline-block;
+}
